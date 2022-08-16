@@ -14,7 +14,17 @@ app.use(express.json())
 
 app.use(express.urlencoded({extended: true}))
 
-app.post('/create', async)
+// app.post('/create', async(req, res) => {
+//     try {
+//         const id = req.body.data;
+//         const userJson = {
+//             email: req.body.email,
+//             firstname: req.body.firstName,
+//             lastName: req.body.lastName
+//     };
+//     const response = db.collection('users').doc(id)
+//     }
+// })
 
 const PORT = process.env.PORT || 8080
 app.listen(PORT, () => {
